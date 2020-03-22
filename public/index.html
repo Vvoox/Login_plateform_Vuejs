@@ -1,17 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ATTACK & DEFENSE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body style="background-image: url('images/11.jpg'); background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;">
+<!-- partial:index.partial.html -->
+
+<form class="form" id="form" v-bind:{{link}}>
+  <div class="field email">
+    <div class="icon"></div>
+    <input class="input" id="email" type="email" placeholder="Email" autocomplete="off" />
+    </div>
+  <div class="field password">
+    <div class="icon"></div>
+    <input class="input" id="password" type="password" placeholder="Password" />
+  </div>
+  <button class="button" id="submit">LOGIN
+    <div class="side-top-bottom"></div>
+    <div class="side-left-right"></div>
+  </button><small>Fill in the form</small>
+</form>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="js/script.js"></script>
+<script  src="js/vue.js"></script>
+<script>
+  new Vue({
+    el:"#MyApp",
+    data:{
+      name:"WELCOME IN ATTACK & DEFENSE , SHOW YOUR SKILLS",
+      link:"home.html",
+      error :"your data is incorrect",
+    },
+    method :{
+      auth:function () {
+
+      }
+    }
+
+
+
+  })
+
+</script>
+
+</body>
 </html>
